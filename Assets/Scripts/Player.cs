@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
         if (_numSeeds > 0)
         {
             Instantiate(_plantPrefab, _playerTransform.position, Quaternion.identity);
-            Debug.Log("number seeds decrease");
             _numSeeds -= 1;
             _numSeedsLeft -= 1;
             _numSeedsPlanted += 1;
