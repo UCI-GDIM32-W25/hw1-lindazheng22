@@ -34,7 +34,9 @@ Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lectur
 
 Write your Devlog here!
 
-I planned to build HW1 by starting with the player. I inserted the bunny sprite onto the scene and made sure that the script added to the bunny GameObject added action to the bunny by moving with wasd keys with the GetKey method. Additionally, I added the GetKeyDown method for the space key so that the plant can be planted. I had to make the plant a prefab before instantiating it at the player's location with _playerTransform.position. I also made sure that there wasn't more than 5 plants being planted. An issue I ran into while doing this project was trying to update the UI text because I'm not sure why the Player script wouldn't access the PlantCountUI script.
+I planned to build HW1 by starting with the player. I inserted the bunny sprite onto the scene and made sure that the script added to the bunny GameObject added action to the bunny by moving with wasd keys with the GetKey method in an if statement. Additionally, I added the GetKeyDown method for the space key so that the plant can be planted. I had to make the plant a prefab before instantiating it at the player's location with _playerTransform.position. I also made sure that there wasn't more than 5 plants being planted. Lastly, I referenced the PlantCountUI script in the Player script so that the remaining seeds and seeds planted UI would be updated with each space key as well. Seeds planted started at 0 and increased by 1 while seeds remaining started at 5 and decreased by 1 until the _numSeeds counter is greater than 0 with the if statement, decreasing from 5 as well, after I dragged the TextMeshPro into the serialized field.
+
+
 
 ## Open-Source Assets
 If you added any other outside assets, list them here!
